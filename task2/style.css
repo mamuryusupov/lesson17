@@ -12,8 +12,8 @@
     
     td,
     th {
-        padding: 4px;
         text-align: right;
+        line-height: 40px;
     }
     
     tbody>tr:nth-child(odd) {
@@ -39,5 +39,4 @@
     
     div {
         overflow-y: auto;
-        display: block;
     }
