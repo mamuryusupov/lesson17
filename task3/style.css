@@ -4,7 +4,6 @@
 
 table {
     margin: 16px;
-    border: 1px solid black;
 }
 
 table,
@@ -20,44 +19,32 @@ td {
     text-align: center;
 }
 
-tr,
-td {
-    border: 1px solid black;
-}
-
-tr:nth-child(even) td:nth-child(even) {
-    background-color: white;
-}
-
-tr:nth-child(odd) td:nth-child(odd) {
-    background-color: white;
-}
-
-tr:nth-child(odd) td:nth-child(odd) {
-    background-color: black;
-}
-
-tr:nth-child(even) td:nth-child(even) {
-    background-color: black;
-}
-
-
-/* td:nth-child(1),
-td:nth-child(10) {
-    background-color: white !important;
-    border: none !important;
-} */
-
 tr:first-child>td,
 tr:last-child>td {
     background-color: white !important;
     border: none !important;
 }
 
-tr>td#edge {
-    background-color: white !important;
-    border-left: 1px solid black !important;
-    border-right: 1px solid black !important;
-    border-top: hidden !important;
-    border-bottom: hidden !important;
+td#edge {
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: hidden;
+    border-bottom: hidden;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
 }
