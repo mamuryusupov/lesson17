@@ -1,3 +1,7 @@
+    * {
+        box-sizing: border-box;
+    }
+    
     table {
         width: 500px;
     }
@@ -16,7 +20,7 @@
     td,
     th {
         text-align: right;
-        line-height: 40px;
+        height: 40px;
         padding: 4px;
     }
     
@@ -43,4 +47,8 @@
     
     div {
         overflow-x: auto;
+    }
+    
+    #boxsize {
+        box-sizing: border-box;
     }
